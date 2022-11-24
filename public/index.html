@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>INM320 Assignment - Bootstrap</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid content-block">
+        <div class="row flex-nowrap">
+            <!-- Sidebar -->
+            <nav id="sidebarMenu" class="col-md-3 g-0 d-md-block fixed-top sticky-md-top collapse">
+                <div class="d-flex flex-column align-items-start pt-2 sidebar-sticky">
+                    <a href="#" class="d-flex align-items-center p-3 mb-3 text-white text-decoration-none">
+                        
+                        <img src = "assets/images/logo.svg" alt="Dashboard Kit Logo"/>
+                        <span class="ms-3 fs-5">Dashboard Kit</span>
+                    </a>
+                    <ul class="nav nav-pills flex-column align-items-start my-1 w-100">
+                        <li class="nav-item w-100">
+                            <a href="#" class="nav-link active align-middle p-3">
+                                <i class="fs-5 bi bi-pie-chart-fill"></i>
+                                <span class="ms-2 fs-5">Overview</span>
+                            </a>
+                        </li>
+                        <li class="nav-item w-100">
+                            <a href="#" class="nav-link align-middle p-3">
+                                <i class="fs-5 bi bi-ticket-perforated-fill"></i>
+                                <span class="ms-2 fs-5">Tickets</span>
+                            </a>
+                        </li>
+                        <li class="nav-item w-100">
+                            <a href="#" class="nav-link align-middle p-3">
+                                <i class="fs-5 bi bi-lightbulb-fill"></i>
+                                <span class="ms-2 fs-5">Ideas</span>
+                            </a>
+                        </li>
+                        <li class="nav-item w-100">
+                            <a href="#" class="nav-link align-middle p-3">
+                                <i class="fs-5 bi-people-fill"></i>
+                                <span class="ms-2 fs-5">Contacts</span>
+                            </a>
+                        </li>
+                        <li class="nav-item w-100">
+                            <a href="#" class="nav-link align-middle p-3">
+                                <i class="fs-5 bi-person-lines-fill"></i>
+                                <span class="ms-2 fs-5">Agents</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle p-3">
+                                <i class="fs-5 bi-journal-text"></i>
+                                <span class="ms-2 fs-5">Articles</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column align-items-start my-1 w-100 border-secondary border-top">
+                        <li class="nav-item w-100">
+                            <a href="#" class="nav-link align-middle p-3">
+                                <i class="fs-5 bi bi-gear-fill"></i>
+                                <span class="ms-2 fs-5">Settings</span>
+                            </a>
+                        </li>
+                        <li class="nav-item w-100">
+                            <a href="#" class="nav-link align-middle p-3">
+                                <i class="fs-5 bi bi-award-fill"></i>
+                                <span class="ms-2 fs-5">Subscription</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
+            <!-- Dashboard -->
+            <main class="col">
+                <!-- Header -->
+                <header class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 ">
+                    <h1 class="h2">Overview</h1>
+                    <div class="d-md-flex align-items-center collapse">
+                        <div class="btn-group me-2">
+                            <a id="btn-search" class="mx-3" href="#">
+                                <i class="bi bi-search fs-5"></i>
+                            </a>
+                            <a id="btn-noti" class="mx-3" href="#">
+                                <i class="bi bi-bell-fill fs-5"></i>
+                            </a>
+                        </div>
+                        <div class="vr"></div>
+                        <div class="profile-avatar ">
+                            <span class="fs-6 mx-4">Jones Ferdinand</span>
+                            <img class="avatar-image" src="assets/images/avatar.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- Burger Menu -->
+                    <button class="navbar-toggler position-absolute top-0 end-0 m-3 btn btn-secondary border rounded-3 p-2 d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="bi bi-list fs-2"></i>
+                    </button>
+                </header>
+                
+                <div class="container-fluid">
+                    <!-- Ticket Block -->
+                    <div class="row mb-5">
+                        <div class="col-lg-3 mb-3 mb-lg-0">
+                            <div class="ticket-card p-3 text-center border border-2 rounded-3">
+                                <h5 class="ticket-card-title">Unresolved</h5>
+                                <h2>60</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-3 mb-lg-0">
+                            <div class="ticket-card p-3 text-center border border-2 rounded-3">
+                                <h5 class="ticket-card-title">Overdue</h5>
+                                <h2>16</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-3 mb-lg-0">
+                            <div class="ticket-card p-3 text-center border border-2 rounded-3">
+                                <h5 class="ticket-card-title">Open</h5>
+                                <h2>43</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-lg-0">
+                            <div class="ticket-card p-3 text-center border border-2 rounded-3">
+                                <h5 class="ticket-card-title">On hold</h5>
+                                <h2>64</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Content Block for Today's Trends-->
+                    <div class="row g-0 border border-2 rounded-3 mb-5">
+                        <div class="todays-trends-block col-xl-8 border-end">
+                            <div class="p-4">
+                                <h4>Today's trends</h4>
+                                <span class="fs-6 text-muted"> as of 25 May 2019, 09:41 PM</span>
+                                <img class="p-4" src="assets/images/full_graph.png" alt="" style="display: block; width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-xl-4 d-xl-flex flex-column ">
+                            <div class="p-4 text-center border-bottom flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+                                <h5>Resolved</h5>
+                                <h2>449</h2>
+                            </div>
+                            <div class="p-4 text-center border-bottom flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+                                <h5>Received</h5>
+                                <h2>426</h2>
+                            </div>
+                            <div class="p-4 text-center border-bottom flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+                                <h5>Average first response time</h5>
+                                <h2>33m</h2>
+                            </div>
+                            <div class="p-4 text-center border-bottom flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+                                <h5>Average response time</h5>
+                                <h2>3h 8m</h2>
+                            </div>
+                            <div class="p-4 text-center flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+                                <h5>Resolution within SLA</h5>
+                                <h2>94%</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Content Block for Unresolved tickets and Tasks-->
+                    <div class="row mb-5">
+                        <!-- Unresolved tickets -->
+                        <div class="col-xl-6 mb-5">
+                            <div class="border border-2 rounded-3">
+                                <div class="d-flex justify-content-between align-items-center mx-4 mt-4 mb-2">
+                                    <div class="">
+                                        <h4>Unresolved tickets</h4>
+                                    </div>
+                                    <div class="">
+                                        <h6>View details</h6>
+                                    </div>
+                                </div>
+                                <span class="ms-4 fs-6 text-muted">
+                                    Group:
+                                </span>
+                                <span class="fs-6">
+                                    Support
+                                </span>
+
+                                <div>
+                                    <div class="d-flex justify-content-between text-center border-bottom mt-3">
+                                        <span class="fs-5 m-4">Waiting on Feature Request</span>
+                                        <span class="fs-5 m-4 text-muted">4238</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between text-center border-bottom">
+                                        <span class="fs-5 m-4">Awaiting Customer Response</span>
+                                        <span class="fs-5 m-4 text-muted">1005</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between text-center border-bottom">
+                                        <span class="fs-5 m-4">Awaiting Developer Fix</span>
+                                        <span class="fs-5 m-4 text-muted">914</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between text-center">
+                                        <span class="fs-5 m-4">Pending</span>
+                                        <span class="fs-5 m-4 text-muted">281</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tasks -->
+                        <div class="col-xl-6">
+                            <div class="border border-2 rounded-3">
+                                <div class="d-flex justify-content-between align-items-center mx-4 mt-4 mb-2">
+                                    <div class="">
+                                        <h4>Tasks</h4>
+                                    </div>
+                                    <div class="">
+                                        <h6>View all</h6>
+                                    </div>
+                                </div>
+                                <span class="ms-4 fs-6 text-muted">
+                                    Today
+                                </span>
+
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-center border-bottom mt-3">
+                                        <span class="fs-5 m-4 text-muted">Create new task</span>
+                                        <div class="mx-4 my-2">
+                                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#new-task">
+                                                <i class="bi bi-plus fs-4"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--Modal for create new task-->
+                                    <div class="modal fade text-start" id="new-task" tabindex="-1" aria-labelledby="newTaskLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title" id="newTaskLabel">Create new task</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <!-- Form for create new task -->
+                                                <form class="m-4">
+                                                    <div class="mb-3">
+                                                      <label for="taskName" class="form-label">Task:</label>
+                                                      <input type="text" class="form-control" id="nickName" />
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="taskDescription" class="form-label">Description:</label>
+                                                        <input type="text" class="form-control" id="nickName" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlSelect1">Status:</label>
+                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                          <option>NEW</option>
+                                                          <option>DEFAULT</option>
+                                                          <option>URGENT</option>
+                                                        </select>
+                                                    </div>
+                                                  </form>
+                                                <div class="modal-footer">
+                                                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center border-bottom">
+                                        <span class="fs-5 m-4 d-flex align-items-center">
+                                            <input class="form-check-input me-3" type="checkbox" value="" aria-label="Radio button for following text input">
+                                            Finish ticket update</span>
+                                        <div class="mx-4 my-4">
+                                            <span class="badge text-bg-warning text-white px-3 fs-6">URGENT</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center border-bottom">
+                                        <span class="fs-5 m-4 d-flex align-items-center">
+                                            <input class="form-check-input me-3" type="checkbox" value="" aria-label="Radio button for following text input">
+                                            Create new ticket example</span>
+                                        <div class="mx-4 my-4">
+                                            <span class="badge text-bg-success text-white px-3 fs-6">NEW</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center ">
+                                        <span class="fs-5 m-4 d-flex align-items-center">
+                                            <input class="form-check-input me-3" type="checkbox" value="" aria-label="Radio button for following text input">
+                                            Update ticket report</span>
+                                        <div class="mx-4 my-4">
+                                            <span class="badge text-bg-secondary text-white px-3 fs-6">DEFAULT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  
+            </main>
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
